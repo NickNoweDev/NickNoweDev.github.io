@@ -1,0 +1,19 @@
+/*
+
+    Version 01 - NSCC Web Development Portfolio
+    Author: Nick Nowe
+	W#:	    w0134248
+    Date:   Nov 27, 2018
+
+*/
+
+/* Main Styles */
+main > section {
+	width: 80%;
+	margin: 0 auto;
+}
+
+main > section > embed {
+	width: 100%; 
+	height: 1200px;
+}

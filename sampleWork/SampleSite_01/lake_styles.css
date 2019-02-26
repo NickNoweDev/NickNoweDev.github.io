@@ -1,0 +1,224 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: CAC Champagne;
+    src: url('cac_champagne.ttf') format('truetype'),
+         url('cac_champagne.woff') format('woff');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Nick Nowe
+   Date:   Oct. 8, 2018
+   
+   Filename: lake_styles.css
+
+*/
+
+/* Setting Main Background Colours */
+html {
+	/* An image could have been used for older browsers, but I'm fine with them seeing a solid BG colour */
+	background-color: #f5f1e4;
+	/* Creating a 3px repeating background with css! */
+	background-image: repeating-linear-gradient(135deg,#f5f1e4,#f5f1e4 10px,#e3decc 10px,#e3decc 13px);
+}
+
+body {
+	/*For older browsers that don't support gradients. Doesn't fix the uneven column issue in a fluid layout when resized though */
+	background-color: #E6DDBC;
+	/* Gradient solution to the uneven column height issue */
+	background-image: linear-gradient(90deg,#E6DDBC 70%,#d2b89e 30%);
+}
+
+/* Setting the Navigation Styles */
+header > nav {
+	background-color: #690202;
+	/* Creating a subtle gradient nav menu, using a method that can be reused regardless of the original colour */
+	background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0));
+}
+
+header > nav a {
+	color: #f5f1e4;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-decoration: none;
+}
+
+header > nav a:hover {
+	background-color: #9d3d3d;
+	background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0));
+}
+
+header > nav a:active {
+	background-color: #540202;
+	/* Swapping the gradient to black for a subtle pressed look */
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0));
+}
+
+/* Setting the Left Column Styles */
+section#leftcol {
+	background-color: #E6DDBC;
+	padding: 2%;
+}
+
+section#leftcol > h1 {
+	margin-top: 0px;
+	margin-bottom: 2%;
+	font-family: CAC Champagne, serif;
+	font-size: 3em;
+	font-weight: normal;
+	color: #690202;
+}
+
+section#leftcol > img {
+	border: 2px solid #690202;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+section#leftcol > p {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+section#leftcol em {
+	color: #690202;
+	font-weight: bold;
+}
+
+section#leftcol > aside {
+	border: 2px solid #c39d88;
+	background-color: #e0d2b3;
+	margin: 0px;
+	width: 49%;
+	padding: 1%;
+}
+
+/* Setting styles for the 2 info boxes */
+section#leftcol > aside:first-of-type {
+	margin-right: 2%;
+}
+
+section#leftcol > aside h1 {
+	margin-top: 0px;
+	margin-bottom: 2%;
+	font-family: CAC Champagne, serif;
+	font-weight: normal;
+	font-size: 2em;
+	text-align: center;
+	background-color: #ceb198; /* For older browsers */
+	background-color: rgba(105, 2, 2, 0.04);
+	padding: 1.5%;
+}
+
+section#leftcol > aside h2 {
+	font-size: 1.2em;
+	color: #690202;
+	margin-top: 2%;
+	margin-bottom: 0;
+}
+
+section#leftcol > aside p {
+	margin-top: 1%;
+}
+
+section#leftcol > aside ul {
+	margin-top: 1%;
+	padding-left: 18px;
+}
+
+section#leftcol > aside a {
+	color: #690202;
+}
+
+section#leftcol > aside a:visited {
+	color: #540202;
+}
+
+section#leftcol > aside a:hover {
+	color: #8d3232;
+	font-weight: bold;
+}
+
+/* Setting the Right Column Styles */	
+section#rightcol {
+	background-color: #d2b89e;
+}
+
+section#rightcol > nav > h2:first-of-type {
+	margin-top: 0px;
+}
+
+section#rightcol h2 {
+	padding: 1% 0 2% 6.67%;
+	margin-bottom: 2%;
+	font-family: CAC Champagne, serif;
+	font-size: 2.5em;
+	font-weight: normal;
+	background-color: #dbcaac; /* For older browsers that don't support alpha channels/transparency */
+	background-color: rgba(105, 2, 2, 0.04); /* An example of Progressive Enhancement */
+}
+
+section#rightcol > nav > ul {
+	list-style-type: square;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+section#rightcol > nav > ul a {
+	text-decoration: none;
+	color: #690202;
+}
+
+section#rightcol > nav > ul a:visited {
+	color: #540202;
+}
+
+section#rightcol > nav > ul a:hover {
+	color: #8d3232;
+	font-weight: bold;
+}
+
+/* Setting the styles for the block quote */
+section#rightcol > blockquote {
+	color: #690202;
+	font-style: italic;
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 18px;
+	padding: 16px 34px 16px 34px;
+	position: relative; /* Used for the later quotes positioning */
+	text-align: center;
+}
+
+section#rightcol > blockquote::before {
+	content: "\201C";
+	/* Positioning the quotes "around" the text block rather than immediately attached to the front and back */
+	position: absolute;
+	top: 0;
+	left: 8px;
+	font-size: 3em;
+	font-style: normal;
+}
+
+section#rightcol > blockquote::after {
+	content: "\201D";
+	/* Positioning the quotes "around" the text block rather than immediately attached to the front and back */
+	position: absolute;
+	top: 0;
+	right: 8px;
+	font-size: 3em;
+	font-style: normal;
+}
+
+/* Setting the Footer Styles */
+footer {
+	background-color: #262525;
+	color: #E6DDBC;
+	text-align: center;
+	padding: 6px;
+	}

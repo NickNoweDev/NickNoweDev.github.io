@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+   
+      Countries of the World - Final Project
+      Author: Nick Nowe
+	  W#:	  w0134248
+      Date:   Nov 29, 2018
+
+   -->
+   
+   <meta charset="utf-8" />
+   <link href="styles.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   
+   <title>Countries of the World</title>
+</head>
+
+<body>
+	<header>
+        <h1>Countries of the World</h1>
+        <select id="countrySelect">
+            <option value="" disabled selected>Select a Country</option>
+        </select>
+	</header>
+	
+	<main>
+        <section class="nameSection">
+            <h1 id="countryName">Country Name</h1>
+        </section>
+
+        <section class="flagSection">
+            <h2 id="countryFlag">Country's Flag</h2>
+            <div id="countryFlagIMG">
+                <img src="defaultFlag.jpg" alt="Country Flag" />
+            </div>
+            <div class="buttons">
+                <button id="openWiki">Wikipedia</button>
+                <button disabled>Launch Quiz</button>
+            </div>
+        </section>
+
+        <section class="detailSection">
+            <h2 id="countryDetails">Country's Details</h2>
+
+            <fieldset>
+                <label for="population">Population:</label><br>
+                <input type="text" id="population" autocomplete="off" size="40" readonly /><br><br>
+
+                <label for="areaIn">Area In:</label>
+                <input type="radio" name="areaIn" id="areaSQM" checked> Sq. Miles
+                <input type="radio" name="areaIn" id="areaSQKM"> Sq. KMs<br>
+                <input type="text" id="areaInDisplay" autocomplete="off" size="40" readonly /><br><br>
+                
+                <label for="popDensity">Popultion Density:</label>
+                <input type="radio" name="popDensity" id="densitySQM" checked> Sq. Mile
+                <input type="radio" name="popDensity" id="densitySQKM"> Sq. KM<br>
+                <input type="text" id="popDensityDisplay" autocomplete="off" size="40" readonly /><br><br>
+
+                <label for="popPercent">Percentage of the World Population:</label><br>
+                <input type="text" id="popPercent" autocomplete="off" size="40" readonly /><br>
+            </fieldset>
+        </section>
+
+    </main>
+    
+    <footer>
+        Created by Nick Nowe &#9679; W0134248 &#9679; PROG1700
+    </footer>
+</body>
+<script src="scripts.js"></script>
+</html>

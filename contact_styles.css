@@ -1,0 +1,52 @@
+/*
+
+    Version 01 - NSCC Web Development Portfolio
+    Author: Nick Nowe
+	W#:	    w0134248
+    Date:   Nov 27, 2018
+
+*/
+
+/* Setting the layout */
+body {
+	/* Making the conact me page fill 100% of the height */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+/* Table Styles */
+table {
+	width: 80%;
+	background-color: white;
+	background-color: rgba(255,255,255,0.9);
+	margin: 50px auto;
+	border: 1px solid #60636a;
+}
+
+th {
+	background-color: #60636a;
+    background-color: rgba(24,29,37,0.8);
+	color: white;
+	padding: 5px;
+}
+
+td.contactIcon {
+	background-color: #e7c69a;
+	width: 120px;
+	height: 120px;
+}
+
+td.contactIcon > img {
+	width: 90px;
+	display: block;
+	margin: 0 auto;
+}
+
+td.contactInfo {
+	padding: 0 10px;
+}
+
+td {
+	border-bottom: 2px solid #60636a;
+}

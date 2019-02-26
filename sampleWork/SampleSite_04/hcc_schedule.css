@@ -1,0 +1,110 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+
+/* Table Styles */
+table {
+	border: 1px solid #ecf0f1;
+	text-align: center;
+	margin: 20px auto;
+}
+
+table > caption {
+	background-color: rgba(92,109,126,0.7);
+	background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0));
+	border: 1px solid #ecf0f1;
+	border-collapse: separate; /*This is default, but there is a note to set border-collapse, and in thsi case I'd prefer separate */
+	color: white;
+	padding: 6px;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+}
+
+/* Cell Styles */
+th, td {
+	width: 130px;
+	padding: 4px;
+	background-color: snow;
+}
+
+th.time, td.time {
+	width: 82px;
+}
+
+th.time {
+	background-color: rgba(236,240,241,0.7);
+}
+
+td.time {
+	background-color: rgba(236,240,241,0.2);
+}
+
+th.sunrise {
+	background-color: rgba(155,89,182,0.7);
+}
+
+td.sunrise {
+	background-color: rgba(155,89,182,0.2);
+}
+
+th.mountain {
+	background-color: rgba(230,126,34,0.7);
+}
+
+td.mountain {
+	background-color: rgba(230,126,34,0.2);
+}
+
+th.arbor {
+	background-color: rgba(26,188,156,0.7);
+}
+
+td.arbor {
+	background-color: rgba(26,188,156,0.2);
+}
+
+th.mitchell {
+	background-color: rgba(231,76,60,0.7);
+}
+
+td.mitchell {
+	background-color: rgba(231,76,60,0.2);
+}
+
+th.gold {
+	background-color: rgba(241,196,15,0.7);
+}
+
+td.gold {
+	background-color: rgba(241,196,15,0.2);
+}
+
+th.blue {
+	background-color: rgba(92,172,226,0.7);
+}
+
+td.blue {
+	background-color: rgba(92,172,226,0.2);
+}
+
+th.green {
+	background-color: rgba(87,214,141,0.7);
+}
+
+td.green {
+	background-color: rgba(87,214,141,0.2);
+}
+
+.empty {
+	background-image: repeating-linear-gradient(180deg,snow,snow 26px,white 26px,white 28px);
+}

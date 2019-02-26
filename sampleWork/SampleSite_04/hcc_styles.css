@@ -1,0 +1,131 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: 
+   Date:  
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+/* Reseting Elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Header Styles */
+header {
+	background-color: #5c6d7e;
+	width: 100%;
+}
+
+header > section.headerContent {
+	height: 60px;
+	width: 1080px;
+	margin-right: auto;
+	margin-left: auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+header h1 > a {
+	text-decoration: none;
+	color: #adc3d2;
+}
+
+header h1 > a:visited {
+	color: #adc3d2;
+}
+
+/* Navigation Styles */
+header nav > ul {
+		list-style-type: none;
+		display: -webkit-flex;
+		display: flex;
+	}
+
+header nav > ul > li {
+	text-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 0 6px 0 6px;
+}
+
+header nav > ul > li { 
+    border-right: 1px solid #95a5a6;
+}
+
+header nav > ul > li:last-of-type { 
+    border-right: none;
+}
+
+
+header nav > ul > li > a {
+	text-decoration: none;
+	color: #95a5a6;
+}
+
+header nav > ul > li > a:visited {
+	color: #95a5a6;
+}
+
+header nav > ul > li > a:hover {
+	color: snow;
+}
+
+/* Main Styles */	
+main {
+	width: 1080px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main > section.reservations {
+	padding: 0 8px 20px 8px;
+	font-size: 1.2em;
+}
+
+main > section.reservations > p {
+	margin-bottom: 8px;
+}
+
+main > section.reservations > dl {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+
+main > section.reservations dt {
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	color: #566473;
+}
+
+main > section.reservations dd {
+	margin-bottom: 12px;
+	color: #5c6d7e;
+}
+
+/* Footer Styles */
+footer {
+	width: 100%;
+	background-color: #566473;
+	color: snow;
+	text-align: center;
+	padding: 8px;
+	letter-spacing: 1px;
+}

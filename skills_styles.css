@@ -1,0 +1,36 @@
+/*
+
+    Version 01 - NSCC Web Development Portfolio
+    Author: Nick Nowe
+	W#:	    w0134248
+    Date:   Nov 27, 2018
+
+*/
+
+/* Setting the layout */
+body {
+	/* Making the skills page fill 100% of the height */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+/* Main Styles */
+main > section {
+	width: 80%;
+	margin: 50px auto;
+	background-color: white;
+	background-color: rgba(255,255,255,0.9);
+	border: 1px solid #60636a;
+	padding: 10px;
+}
+
+main > section > h1 {
+	font-family: Arial, san-serif;
+	color: #60636a;
+	margin-bottom: 20px;
+}
+
+main > section > img {
+	width: 100%;
+}

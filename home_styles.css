@@ -1,0 +1,58 @@
+/*
+
+    Version 01 - NSCC Web Development Portfolio
+    Author: Nick Nowe
+	W#:	    w0134248
+    Date:   Nov 27, 2018
+
+*/
+
+/* Setting the layout */
+body {
+	/* Making the home page fill 100% of the height */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+/* Main Styles */
+main {
+	position: relative;
+}
+
+main > section.imgBG {
+	height: 100%;
+	background-image: url("images/laptopBG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.6;
+}
+
+main > section.textBlock {
+    font-family: Arial, san-serif;
+    background-color: #60636a;
+    background-color: rgba(24,29,37,0.8);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    padding: 20px;
+    text-align: center;
+    border-left: 4px solid #e7c69a;
+    border-right: 4px solid #e7c69a;
+	width: 480px;
+	outline: 1px solid #60636a;
+}
+
+main > section.textBlock > h1 {
+	font-size: 4em;
+	letter-spacing: 4px;
+	color: #e7c69a;
+}
+
+main > section.textBlock > p {
+	text-shadow: 2px 2px black;
+}
